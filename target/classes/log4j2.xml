@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="ConfigTask">
+
+    <Properties>
+        <Property name="logger" value="logs_folder"/>
+    </Properties>
+
+    <Appenders>
+        <Console name="ConsoleAppender">
+            <PatternLayout pattern="{%-5level} %m %n"/>
+        </Console>
+
+        <File name="FileAppender" fileName="${logger}/logfile.log">
+            <PatternLayout pattern="{%-5level} %m %n"/>
+        </File>
+
+        <RollingFile append="true" name="RollingFileAppender" fileName="${logger}/rollFileLogfile.log" filePattern="${logger}/rollFileLogfile-%d{yy-MM-dd}.log">
+            <PatternLayout pattern="{%-5level} %m %n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="FileAppender" level="all"/>
+            <AppenderRef ref="RollingFileAppender" level="all"/>
+        </Root>
+
+        <Logger name="Main" level="all">
+            <AppenderRef ref="ConsoleAppender" level="all"/>
+        </Logger>
+    </Loggers>
+
+</Configuration>
