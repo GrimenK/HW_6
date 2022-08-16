@@ -14,3 +14,33 @@ Message debug
 {DEBUG} Message debug 
 {INFO } Message info 
 {DEBUG} Message debug 
+{INFO } Message info 
+{ERROR} Message error 
+{WARN } Message warn 
+{INFO } Message info 
+{DEBUG} Message debug 
+{ERROR} Message error 
+{WARN } Message warn 
+{TRACE} Message trace 
+{INFO } Message info 
+{DEBUG} Message debug 
+{ERROR} Message error 
+{WARN } Message warn 
+{TRACE} Message trace 
+{INFO } Message info 
+{DEBUG} Message debug 
+{ERROR} Message error 
+{WARN } Message warn 
+{TRACE} Message trace 
+{INFO } Message info 
+{DEBUG} Message debug 
+{ERROR} Message error 
+{WARN } Message warn 
+{TRACE} Message trace 
+{INFO } Message info 
+{ERROR} Message error 
+{WARN } Message warn 
+{INFO } Message info 
+{ERROR} Message error 
+{WARN } Message warn 
+{FATAL} Message fatal 
